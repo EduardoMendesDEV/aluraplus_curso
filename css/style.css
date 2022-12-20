@@ -1,0 +1,154 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botão-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+    --botão-azul-efeito: #57a3ff;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main {
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__button{
+    background-color: var(--botão-azul);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.second_button{
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__warning {
+    color: var(--cinza-secundario);
+    text-align: center;
+    font-size: 12px;
+}
+
+.container__title{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__image {
+    margin: 1em 0 2em 0;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.second_image {
+   width: 80%; 
+}
+
+.second {
+    align-items: center;
+    margin: 0 10em 0 10em;
+}
+
+.description__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+
+
+.description__text {
+    color: var(--cinza-secundario);
+    
+}
+
+.secondary__button {
+    display: inline-block;
+    margin-top: 0.8em;
+}
+
+.second__description {
+    padding: 2em;
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none;
+    margin: 5em 0;   
+}
+
+.devices__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.item__list {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+
+.rodape {
+    text-align: center;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.links {
+    text-decoration: none;
+    padding: 1em;
+    color: var(--branco-principal) ;
+}
+
+.footer__text {
+    color: var(--cinza-secundario);
+    padding: 1em;
+    
+}
+
+.footer__links a:hover {
+    color: var(--botão-azul);
+}
+
+.footer__links a:active {
+    color: red;
+}
+
+.container__button:hover {
+    background-color: var(--botão-azul-efeito);
+    color: var(--cor-de-fundo);
+
+}
